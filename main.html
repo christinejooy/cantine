@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page - Christine's Canteen</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header Section */
+        header {
+            background: lavender;
+            color: #333;
+            padding: 1em;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        header .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        header img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        header h1 {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 0;
+            color: #333;
+        }
+
+        header h1 span {
+            color: #ff6f61;
+            font-style: italic;
+        }
+
+        nav {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 0.5em 1em;
+            border-radius: 20px;
+            background: #ff6f61;
+        }
+
+        nav a:hover {
+            background: #ff8c78;
+        }
+
+        /* Main Content Section */
+        .main-content {
+            padding: 2em;
+            text-align: center;
+        }
+
+        .main-content h2 {
+            color: #ff6f61;
+            margin-bottom: 1em;
+        }
+
+        .main-content .intro {
+            font-size: 20px;
+            color: #555;
+            margin: 2em 0;
+        }
+
+        /* Featured Recipes Section */
+        .featured-recipes {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .recipe-card {
+            width: 280px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .recipe-card:hover {
+            transform: scale(1.05);
+        }
+
+        .recipe-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .recipe-card .card-content {
+            padding: 1em;
+            text-align: center;
+        }
+
+        .recipe-card h3 {
+            color: #333;
+            margin-bottom: 0.5em;
+        }
+
+        .recipe-card p {
+            color: #777;
+            font-size: 14px;
+        }
+
+        /* Footer Section */
+        footer {
+            background: #333;
+            color: white;
+            padding: 1.5em 1em;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        footer a {
+            color: violet;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            nav {
+                justify-content: center;
+                flex-wrap: wrap;
+                margin-top: 1em;
+                width: 100%;
+                text-align: center;
+            }
+
+            nav a {
+                padding: 0.5em 0.8em;
+            }
+
+            .main-content {
+                padding: 1.5em;
+            }
+
+            .featured-recipes {
+                flex-direction: column;
+            }
+
+            .recipe-card {
+                width: 100%;
+            }
+
+            footer {
+                font-size: 12px;
+                padding: 1em 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .main-content h2 {
+                font-size: 22px;
+            }
+
+            .recipe-card h3 {
+                font-size: 18px;
+            }
+
+            footer {
+                font-size: 10px;
+                padding: 1em 0;
+            }
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="pics/logo.jpg" alt="Foodie Haven Logo">
+            <h1><span>Christine's</span> Canteen</h1>
+        </div>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="main.html">Main Page</a>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <div class="main-content">
+        <h2>Welcome to Christine's Canteen!</h2>
+        <p class="intro">Explore a variety of delicious recipes that will inspire you to get creative in the kitchen!</p>
+        
+        <!-- Featured Recipes Section -->
+        <div class="featured-recipes">
+            <!-- Recipe Card 1 -->
+            <a href="act1-p1.html" class="recipe-card">
+                <img src="pics/pc.jpg" alt="Pancake">
+                <div class="card-content">
+                    <h3>Pancake</h3>                   
+                </div>
+            </a>
+
+            <!-- Recipe Card 2 -->
+            <a href="act2-p2.html" class="recipe-card">
+                <img src="pics/cc.jpg" alt="Chicken Curry">
+                <div class="card-content">
+                    <h3>Chicken Curry</h3>                   
+                </div>
+            </a>
+
+            <!-- Recipe Card 3 -->
+            <a href="act3-p3.html" class="recipe-card">
+                <img src="pics/bs.jpg" alt="Buttered Shrimp">
+                <div class="card-content">
+                    <h3>Buttered Shrimp</h3>                   
+                </div>
+            </a>
+
+            <!-- Recipe Card 4 -->
+            <a href="act4-p4.html" class="recipe-card">
+                <img src="pics/sg.jpg" alt="Spaghetti">
+                <div class="card-content">
+                    <h3>Pork Sinigang</h3>                    
+                </div>
+            </a>
+
+            <!-- Recipe Card 5 -->
+            <a href="act5-p5.html" class="recipe-card">
+                <img src="pics/ss.jpg" alt="Fruit Salad">
+                <div class="card-content">
+                    <h3>Pork Sisig</h3>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Created by: Christine Joy Ferrer</p>
+        <p>Contact: <a href="ferrerchristine064@gmail.com">ferrerchristine064@gmail.com</a> | Mobile: 09936382956</p>
+        <p>Follow me on: 
+            <a href="https://www.facebook.com/christine.ferrer.115116?mibextid=ZbWKwL" target="_blank">Facebook</a> | 
+            <a href="https://www.instagram.com/chrstn.ferrr?igsh=MWU0enY0NXc3c3ZucQ==" target="_blank">Instagram</a>
+        </p>
+    </footer>
+</body>
+</html>

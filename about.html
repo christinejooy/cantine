@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Christine's Canteen</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header Section */
+        header {
+            background: lavender;
+            color: #333;
+            padding: 1em;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        header .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        header img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        header h1 {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 0;
+            color: #333;
+        }
+
+        header h1 span {
+            color: #ff6f61;
+            font-style: italic;
+        }
+
+        /* Navigation Bar */
+        nav {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 0.5em 1em;
+            border-radius: 20px;
+            background: #ff6f61;
+        }
+
+        nav a:hover {
+            background: #ff8c78;
+        }
+
+        /* Content Sections */
+        .section {
+            padding: 2em;
+            text-align: center;
+        }
+
+        .section h2 {
+            color: #ff6f61;
+            margin-bottom: 1em;
+        }
+
+        .introduction-statement {
+            font-size: 20px;
+            font-style: italic;
+            font-weight: bold;
+            color: #555;
+            margin: 1em 0;
+        }
+
+        .purpose-statement {
+            font-size: 18px;
+            color: #555;
+            margin: 1.5em 0;
+        }
+
+        .author-info {
+            font-size: 16px;
+            color: #555;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+
+        /* Footer Section */
+        footer {
+            background: #333;
+            color: white;
+            padding: 1.5em 1em;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        footer a {
+            color: violet;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            nav {
+                justify-content: center;
+                flex-wrap: wrap;
+                margin-top: 1em;
+            }
+
+            nav a {
+                padding: 0.5em 0.8em;
+            }
+
+            .section {
+                padding: 1.5em;
+            }
+
+            .introduction-statement {
+                font-size: 18px;
+            }
+
+            .purpose-statement {
+                font-size: 16px;
+            }
+
+            .author-info {
+                font-size: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                text-align: center;
+            }
+
+            header .logo {
+                justify-content: center;
+            }
+
+            header h1 {
+                font-size: 20px;
+            }
+
+            .introduction-statement {
+                font-size: 16px;
+            }
+
+            .purpose-statement {
+                font-size: 14px;
+            }
+
+            .author-info {
+                font-size: 14px;
+            }
+
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav a {
+                padding: 0.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="pics/logo.jpg" alt="Christine's Canteen Logo">
+            <h1><span>Christine's</span> Canteen</h1>
+        </div>
+        <nav>
+        <center>
+            <a href="home.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="main.html">Main Page</a>
+        </center>
+        </nav>
+    </header>
+
+    <!-- Introduction Statement Section -->
+    <div class="section">
+        <h2>About Us</h2>
+        <p class="introduction-statement">
+            "Welcome to Christine's Canteen, your go-to destination for delicious, easy-to-follow recipes that bring joy to your kitchen!"
+        </p>
+    </div>
+
+    <!-- Purpose Statement Section -->
+    <div class="section">
+        <h2>Our Purpose</h2>
+        <p class="purpose-statement">
+            At Christine's Canteen, our goal is to make cooking fun, simple, and accessible for everyone. 
+            We strive to inspire home cooks with a wide variety of recipes, cooking tips, and food trends. Whether you’re a beginner 
+            or an expert, Christine's Canteen is here to help you create memorable dishes that bring people together.
+        </p>
+    </div>
+
+    <!-- Author’s Info Section -->
+    <div class="section">
+        <h2>About the Developer</h2>
+        <p class="author-info">
+            Hello, my name is Christine Joy Ferrer, and I am the developer behind Christine's Canteen. 
+            I have a strong passion for web development and food, which inspired me to create this website. 
+            My background in front-end web development, combined with my love for cooking, has allowed me to 
+            design a platform where I can share both my technical expertise and culinary enthusiasm. 
+            Through Christine's Canteen, I aim to deliver an engaging and user-friendly experience that connects people through food.
+        </p>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Created by: Christine Joy Ferrer</p>
+        <p>Contact: <a href="mailto:ferrerchristine064@gmail.com">ferrerchristine064@gmail.com</a> | Mobile: 09936382956</p>
+        <p>Follow me on: 
+            <a href="https://www.facebook.com/christine.ferrer.115116?mibextid=ZbWKwL" target="_blank">Facebook</a> |  
+            <a href="https://www.instagram.com/chrstn.ferrr?igsh=MWU0enY0NXc3c3ZucQ==" target="_blank">Instagram</a>
+        </p>
+    </footer>
+</body>
+</html>
